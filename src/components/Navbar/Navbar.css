@@ -1,0 +1,274 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 5%;
+
+  background-color: #f8f9f9;
+  color: #000;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-left {
+  flex-shrink: 0;
+}
+
+.logo {
+  font-family: "Lavishly Yours", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Tangerine", cursive;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.nav-links li a {
+  color: #333;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.cart-icon,
+.user-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.navbar-right button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 10px 14px;
+  border: 1px solid #000;
+  border-radius: 6px;
+
+  background-color: #0e0c0c;
+  color: #fff;
+
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.navbar-right button:hover {
+  background-color: #333;
+}
+
+.navbar-right button:active {
+  transform: scale(0.98);
+}
+
+.cart-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 20px;
+  height: 20px;
+  padding: 0 4px;
+  box-sizing: border-box;
+
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.navbar a:focus-visible,
+.navbar button:focus-visible {
+  outline: 2px solid #007bff;
+  outline-offset: 4px;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    gap: 16px;
+    padding: 16px 3%;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-links li a {
+    font-size: 1.1rem;
+  }
+
+  .navbar-right {
+    gap: 10px;
+  }
+
+  .navbar-right button {
+    padding: 9px 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 5%;
+  }
+
+  .navbar-left {
+    order: 1;
+  }
+
+  .navbar-right {
+    order: 2;
+  }
+
+  .navbar-center {
+    order: 3;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .nav-links li a {
+    font-size: 1.1rem;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    gap: 14px 8px;
+    padding: 12px 4%;
+  }
+
+  .logo {
+    font-size: 1.55rem;
+  }
+
+  .navbar-right {
+    gap: 9px;
+  }
+
+  .navbar-right button {
+    gap: 5px;
+    padding: 8px 9px;
+    font-size: 0.8rem;
+  }
+
+  .cart-icon,
+  .user-icon {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .cart-count {
+    min-width: 18px;
+    height: 18px;
+    font-size: 0.7rem;
+  }
+
+  .nav-links {
+    gap: 12px 20px;
+    justify-content: center;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+  }
+}
+
+.pay {
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 360px) {
+  .navbar {
+    padding: 10px 3%;
+  }
+
+  .logo {
+    font-size: 1.35rem;
+  }
+
+  .navbar-right {
+    gap: 6px;
+  }
+
+  .navbar-right button {
+    padding: 7px;
+    font-size: 0.75rem;
+  }
+
+  .nav-links {
+    gap: 10px 14px;
+  }
+
+  .nav-links li a {
+    font-size: 0.9rem;
+  }
+}
