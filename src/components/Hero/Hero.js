@@ -36,7 +36,7 @@ const Hero = () => {
                     </div>
                 </div>
             </dialog>
-            
+
             <div className="hero-image text-center">
                 <img
                     src={heroImage}
@@ -53,8 +53,12 @@ const Hero = () => {
                 <div className="col">
                     <div className="card">
                         <img src={card1} className="card-img-top img-thumbnail" alt="..." />
+                        <div class="mb-3">
+                            {/* <label for="image" class="form-label">Upload Listing Image</label> */}
+                            <input name="newListing[image]" type="file" class="form-control"/>
+                        </div>
                         <div className="card-body">
-                            <h4 className="card-title" style={{color: "black"}}>Vintage Groove Meets Modern Mood</h4>
+                            <h4 className="card-title" style={{ color: "black" }}>Vintage Groove Meets Modern Mood</h4>
                             <p className="card-text">Modern Minimalistic 4 BHK Home Of Auro Smitha</p>
                         </div>
                     </div>
@@ -63,7 +67,7 @@ const Hero = () => {
                     <div className="card">
                         <img src={card2} className="card-img-top img-thumbnail" alt="..." />
                         <div className="card-body">
-                            <h4 className="card-title" style={{color: "black"}}>Creamy Calm Living</h4>
+                            <h4 className="card-title" style={{ color: "black" }}>Creamy Calm Living</h4>
                             <p className="card-text">Megha Malani’s 2 BHK Home In Mumbai</p>
                         </div>
                     </div>
@@ -72,7 +76,7 @@ const Hero = () => {
                     <div className="card">
                         <img src={card3} className="card-img-top img-thumbnail" alt="..." />
                         <div className="card-body">
-                            <h4 className="card-title" style={{color: "black"}}>Earthy Elegance Entryway</h4>
+                            <h4 className="card-title" style={{ color: "black" }}>Earthy Elegance Entryway</h4>
                             <p className="card-text">This room has personality in spades.</p>
                         </div>
                     </div>
@@ -81,7 +85,7 @@ const Hero = () => {
                     <div className="card">
                         <img src={card4} className="card-img-top img-thumbnail" alt="..." />
                         <div className="card-body">
-                            <h4 className="card-title" style={{color: "black"}}>Modern Mirror Moment</h4>
+                            <h4 className="card-title" style={{ color: "black" }}>Modern Mirror Moment</h4>
                             <p className="card-text">This room glows like candlelight. With creamy drapery, warm wood, and sculptural elements.</p>
                         </div>
                     </div>
