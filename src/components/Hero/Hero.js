@@ -29,9 +29,9 @@ const Hero = () => {
                             Menu
                         </button>
                         <div className="menu">
-                            <a className="menu-item" href="/airspace">Action</a>
-                            <a className="menu-item" href="/airspace">Another action</a>
-                            <a className="menu-item" href="/airspace">Something else here</a>
+                            <a className="menu-item" href="/airspace/action">Action</a>
+                            <a className="menu-item" href="/airspace/action">Another action</a>
+                            <a className="menu-item" href="/airspace/help">Something else here</a>
                         </div>
                     </div>
                 </div>

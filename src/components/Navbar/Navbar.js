@@ -1,12 +1,12 @@
-// import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 const Navbar = () => {
   // //Product counter
-  // const [cartCount, setCartCount] = useState(0);
+  const [cartCount, setCartCount] = useState(0);
 
-  // useEffect(() => {
-  //   console.log("Updated cart count:", cartCount);
-  // }, [cartCount]);
+  useEffect(() => {
+    console.log("Updated cart count:", cartCount);
+  }, [cartCount]);
 
   return (
     <nav className="navbar" role="navigation">
@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="navbar-right">
         <a href="/cart" className="cart-icon" aria-label="Shopping Cart">
         <i className="fas fa-shopping-cart"></i></a>
-        {/* <button
+        <button
           type="button"
           onClick={() => {
             setCartCount(cartCount + 1);
@@ -33,7 +33,7 @@ const Navbar = () => {
           Add to Cart
           <i className="fas fa-shopping-cart"></i>
           <span className="cart-count">{cartCount}</span>
-        </button> */}
+        </button>
         <button href='/login' style={{ color: "white", backgroundColor: "black" }}>AdminLogin</button>
 
 
