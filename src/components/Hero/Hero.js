@@ -53,10 +53,10 @@ const Hero = () => {
                 <div className="col">
                     <div className="card">
                         <img src={card1} className="card-img-top img-thumbnail" alt="..." />
-                        <div class="mb-3">
+                        {/* <div class="mb-3"> */}
                             {/* <label for="image" class="form-label">Upload Listing Image</label> */}
-                            <input name="newListing[image]" type="file" class="form-control"/>
-                        </div>
+                            {/* <input name="newListing[image]" type="file" class="form-control"/> */}
+                        {/* </div> */}
                         <div className="card-body">
                             <h4 className="card-title" style={{ color: "black" }}>Vintage Groove Meets Modern Mood</h4>
                             <p className="card-text">Modern Minimalistic 4 BHK Home Of Auro Smitha</p>
